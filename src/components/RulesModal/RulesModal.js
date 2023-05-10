@@ -13,7 +13,7 @@ const RulesModal = ({ modal }) => {
         </Rule>
         <Rule>
           <FaHandScissors style={{ verticalAlign: "middle" }} />
-          {" SCISSORS BEATS PAPERS "}
+          {" SCISSORS BEATS PAPER "}
           <FaHandPaper style={{ verticalAlign: "middle" }} />
         </Rule>
         <Rule>
