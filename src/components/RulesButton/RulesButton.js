@@ -10,13 +10,12 @@ const handleModal = () => {
     setModal(!modal);
 }
 
-const handleHover = () => {
-  setHover(!hover)
-  console.log(hover)
+const handleHover = (boolean) => {
+  setHover(boolean)
 }
 
   return (
-    <RulesBtn onMouseEnter={() => handleHover()} onMouseLeave={() => handleHover()} onClick={handleModal}>Rules <ArrowSpan modal={modal} hover={hover}>{modal ? <TiArrowDownThick style={{verticalAlign: "middle"}}/> : <TiArrowUpThick style={{verticalAlign: "middle"}}/>}</ArrowSpan></RulesBtn>
+    <RulesBtn onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)} onClick={handleModal}>Rules <ArrowSpan modal={modal} hover={hover}>{modal ? <TiArrowDownThick style={{verticalAlign: "middle"}}/> : <TiArrowUpThick style={{verticalAlign: "middle"}}/>}</ArrowSpan></RulesBtn>
   )
 }
 
