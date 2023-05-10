@@ -5,7 +5,7 @@ import CompSelection from './CompSelection';
 import { ItemText, Paper, Rock, Scissors, SelectionButton, SelectionWrapper, SelectText } from './SelectionStyles'
 import UserSelection from './UserSelection';
 
-const Selection = ({ handleUserPick, userPick, handleCompPick, compPick, selected, setSelected, handleReset }) => {
+const Selection = ({ handleUserPick, userPick, handleCompPick, compPick, selected, setSelected, handleReset, result }) => {
 
     const handleSelection = (choice) => {
         handleCompPick(0, 2)
@@ -37,7 +37,7 @@ const Selection = ({ handleUserPick, userPick, handleCompPick, compPick, selecte
             </Scissors>
                 <UserSelection selected={selected} userPick={userPick}/>
                 <CompSelection selected={selected} compPick={compPick}/>
-                <Result selected={selected} handleReset={handleReset}/>
+                <Result selected={selected} handleReset={handleReset} userPick={userPick} compPick={compPick} result={result}/>
         </SelectionWrapper>
     )
 }

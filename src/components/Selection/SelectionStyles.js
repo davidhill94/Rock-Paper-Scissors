@@ -29,6 +29,11 @@ width: 230px;
 margin: 0 0 0.5rem 0;
 background-color: var(--theme-secondary);
 cursor: pointer;
+box-shadow: 0px 0px 10px var(--theme-tertiary);
+
+&:hover {
+    box-shadow: inset 0px 0px 5px 5px var(--theme-tertiary);
+}
 `
 
 export const Rock = styled.div`

@@ -3,14 +3,14 @@ import Logo from '../Logo/Logo'
 import Scoreboard from '../Scoreboard/Scoreboard'
 import { AreaOne, AreaTwo, HeaderWrapper } from './HeaderStyling'
 
-const Header = () => {
+const Header = ({scores}) => {
     return (
         <HeaderWrapper>
             <AreaOne>
                 <Logo />
             </AreaOne>
             <AreaTwo>
-                <Scoreboard />
+                <Scoreboard scores={scores}/>
             </AreaTwo>
         </HeaderWrapper>
     )

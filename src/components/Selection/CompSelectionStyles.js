@@ -1,4 +1,18 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const delayLoadTimer = keyframes`
+ 0% { opacity: 0; }
+ 25% { opacity: 0; }
+ 50% { opacity: 1; }
+ 100% { opacity: 0; }
+`
+const delayLoadIcon = keyframes`
+0% { opacity: 0; }
+25% { opacity: 0; }
+50% { opacity: 1; }
+100% { opacity: 1; }
+`
+
 
 export const CompSelectionWrapper = styled.div`
 width: 50%;
@@ -7,7 +21,7 @@ position: absolute;
 top: 0;
 right: ${(props) => (props.selected ? "0vw" : "-50%")};
 transition: 0.5s ease;
-background-color: red;
+background-color: var(--theme-fourth);
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -16,11 +30,40 @@ justify-content: center;
 export const H1Text = styled.h1`
 font-size: 2.5rem;
 `
+export const Countdown = styled.div`
+position: absolute;
+font-size: 8rem;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+&.one {
+    animation-name: ${delayLoadTimer};
+    animation-duration: 1s;
+    animation-delay: 3s;
+  }
+&.two {
+    animation-name: ${delayLoadTimer};
+    animation-duration: 1s;
+    animation-delay: 2s;
+  }
+&.three {
+    animation-name: ${delayLoadTimer};
+    animation-duration: 1s;
+    animation-delay: 1s;
+  }
+`
 export const CompPickWrapper = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+padding: 1rem;
+opacity: 0;
+animation-name: ${delayLoadIcon};
+animation-duration: 1s;
+animation-delay: 4s;
+animation-fill-mode: forwards;
 `
 export const SelectedIcon = styled.p`
 font-size: 8rem;
@@ -32,6 +75,8 @@ border-radius: 50%;
 height: 230px;
 width: 230px;
 margin: 2rem 0;
+border: 2px solid var(--theme-tertiary);
+box-shadow: 0px 0px 10px var(--theme-tertiary);
 `
 export const SelectedText = styled.p`
 font-size: 3rem;

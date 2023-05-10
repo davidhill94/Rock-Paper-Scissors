@@ -1,10 +1,12 @@
 import React from 'react'
 import { ResetButton, ResultText, ResultWrapper } from './ResultStyles'
 
-const Result = ({ selected, handleReset }) => {
+const Result = ({ selected, handleReset, result }) => {
+
+
   return (
     <ResultWrapper selected={selected}>
-        <ResultText>YOU WIN!</ResultText>
+        <ResultText>{result}</ResultText>
         <ResetButton onClick={handleReset}>Reset</ResetButton>
     </ResultWrapper>
   )

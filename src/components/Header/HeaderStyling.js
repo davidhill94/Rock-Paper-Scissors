@@ -11,7 +11,8 @@ place-items: center;
 
 export const AreaOne = styled.div`
 grid-column: 1 / 2;
-background-color: blue;
+background-color: var(--theme-tertiary);
+color: var(--theme-secondary);
 display: flex;
 height: 100%;
 width: 100%;
