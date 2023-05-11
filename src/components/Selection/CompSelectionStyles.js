@@ -77,7 +77,6 @@ animation-name: ${delayLoadIcon};
 animation-duration: 1s;
 animation-delay: 4s;
 animation-fill-mode: forwards;
-background-color: orange;
 `
 export const SelectedIcon = styled.p`
 font-size: 8rem;
