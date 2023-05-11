@@ -47,7 +47,7 @@ margin: 2rem 0;
 border: 2px solid var(--theme-tertiary);
 box-shadow: 0px 0px 10px var(--theme-tertiary);
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
     height: 100px;
     width: 100px;
     font-size: 3.5rem;
