@@ -39,6 +39,7 @@ height: 230px;
 width: 230px;
 margin: 0 0 0.5rem 0;
 background-color: var(--theme-secondary);
+color: var(--theme-tertiary);
 cursor: pointer;
 box-shadow: 0px 0px 10px var(--theme-tertiary);
 

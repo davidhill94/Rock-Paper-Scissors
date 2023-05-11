@@ -34,6 +34,7 @@ font-size: 3rem;
 export const ResetButton = styled.button`
 padding: 0.5rem;
 background-color: transparent;
+color: var(--theme-tertiary);
 cursor: pointer;
 border: 2px solid var(--theme-tertiary);
 
