@@ -76,7 +76,7 @@ function App() {
         <Wrapper>
           <Header scores={scores}/>
           <Selection handleUserPick={handleUserPick} userPick={userPick} handleCompPick={handleCompPick} compPick={compPick} selected={selected} setSelected={setSelected} handleReset={handleReset} scores={scores} result={result}/>
-          <RulesButton modal={modal} setModal={setModal}/>
+          <RulesButton modal={modal} setModal={setModal} selected={selected}/>
         </Wrapper>
         <RulesModal modal={modal} />
       </div>

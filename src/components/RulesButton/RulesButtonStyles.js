@@ -22,7 +22,7 @@ left: 50%;
 transform: translateX(-50%);
 z-index: 99;
 color: var(--theme-tertiary);
-display: flex;
+display: ${(props) => (props.selected && window.innerWidth < 425 ? "none" : "flex")};
 align-items: center;
 justify-content: center;
 cursor: pointer;

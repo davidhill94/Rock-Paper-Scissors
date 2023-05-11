@@ -16,9 +16,20 @@ display: flex;
 align-items: center;
 justify-content: center;
 border-bottom: 2px solid var(--theme-tertiary);
+
+@media screen and (max-width: 425px) {
+    flex-direction: column;
+}
 `
 export const Rule = styled.p`
 font-size: 2rem;
 text-align: center;
 margin: 0 2rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 1.25rem;
+}
+@media screen and (max-width: 425px) {
+    margin: 0.5rem 0;
+}
 `

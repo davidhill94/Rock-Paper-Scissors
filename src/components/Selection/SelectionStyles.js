@@ -5,9 +5,15 @@ max-width: 100vw;
 height: 85vh;
 display: grid;
 grid-template-columns: repeat(3, auto);
-grid-template-rows: 20% auto;
+grid-template-rows: 10% auto;
 position: relative;
 overflow: hidden;
+
+@media screen and (max-width: 425px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    padding-left: 2.5rem;
+}
 `
 
 export const SelectText = styled.p`
@@ -17,6 +23,10 @@ grid-row: 1 / 2;
 display: flex;
 align-items: center;
 justify-content: center;
+
+@media screen and (max-width: 425px) {
+    grid-column: 1 / 2;
+}
 `
 export const SelectionButton = styled.button`
 font-size: 8rem;
@@ -34,6 +44,35 @@ box-shadow: 0px 0px 10px var(--theme-tertiary);
 &:hover {
     box-shadow: inset 0px 0px 5px 5px var(--theme-tertiary);
 }
+
+@media screen and (max-width: 768px) {
+    height: 180px;
+    width: 180px;
+    font-size: 6rem;
+}
+@media screen and (max-width: 425px) {
+    height: 140px;
+    width: 140px;
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+@media screen and (max-width: 380px) {
+    height: 120px;
+    width: 120px;
+    font-size: 3.5rem;
+    margin-right: 2rem;
+}
+@media screen and (max-width: 300px) {
+    height: 110px;
+    width: 110px;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+@media screen and (max-height: 720px) {
+    height: 100px;
+    width: 100px;
+    font-size: 3.5rem;
+}
 `
 
 export const Rock = styled.div`
@@ -44,6 +83,14 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin: 0 0 4rem 0;
+
+@media screen and (max-width: 425px) {
+    grid-row: 2 / 3;
+    margin: 0;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 1rem;
+}
 `
 export const Paper = styled.div`
 grid-column: 2 / 3;
@@ -53,6 +100,15 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin: 0 0 4rem 0;
+
+@media screen and (max-width: 425px) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    margin: 0;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 1rem;
+}
 `
 export const Scissors = styled.div`
 grid-column: 3 / 4;
@@ -62,7 +118,23 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin: 0 0 4rem 0;
+
+@media screen and (max-width: 425px) {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin: 0;
+    flex-direction: row;
+    justify-content: start;
+    padding: 0 1rem;
+}
 `
 export const ItemText = styled.h1`
 font-size: 3rem;
+
+@media screen and (max-width: 425px) {
+    font-size: 2.5rem;
+}
+@media screen and (max-width: 300px) {
+    font-size: 1.5rem;
+}
 `
