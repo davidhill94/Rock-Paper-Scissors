@@ -29,9 +29,8 @@ justify-content: center;
 
 @media screen and (max-width: 475px) {
   width: 100%;
-  height: 50.5%;  
-  bottom: 0;
-  top: 50%;
+  height: 55.5%;
+  top: 45%;
   right: ${(props) => (props.selected ? "0vw" : "-100%")};
   justify-content: start;
 }
@@ -78,6 +77,7 @@ animation-name: ${delayLoadIcon};
 animation-duration: 1s;
 animation-delay: 4s;
 animation-fill-mode: forwards;
+background-color: orange;
 `
 export const SelectedIcon = styled.p`
 font-size: 8rem;
