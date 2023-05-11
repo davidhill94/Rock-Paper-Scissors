@@ -17,7 +17,6 @@ justify-content: center;
     width: 100%;
     height: 50.5%; 
     left: ${(props) => (props.selected ? "0vw" : "-100vw")}; 
-    justify-content: start;
 }
 `
 export const H1Text = styled.h1`
@@ -60,18 +59,6 @@ box-shadow: 0px 0px 10px var(--theme-tertiary);
     font-size: 2.5rem;
     margin: 0.5rem;
   }
-  @media screen and (max-width: 425px) and (max-height: 740px){
-    height: 140px;
-    width: 140px;
-    font-size: 4rem;
-    margin: 0.5rem;
-  } 
-  @media screen and (max-width: 300px) and (max-height: 655px){
-    height: 750px;
-    width: 75px;
-    font-size: 2rem;
-    margin: 0.5rem;
-  } 
 `
 export const SelectedText = styled.p`
 font-size: 3rem;
