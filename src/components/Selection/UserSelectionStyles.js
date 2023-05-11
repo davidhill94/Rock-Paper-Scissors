@@ -48,15 +48,15 @@ border: 2px solid var(--theme-tertiary);
 box-shadow: 0px 0px 10px var(--theme-tertiary);
 
 @media screen and (max-width: 425px) {
-    height: 200px;
-    width: 200px;
-    font-size: 5rem;
+    height: 100px;
+    width: 100px;
+    font-size: 3.5rem;
     margin: 0.5rem;
   }
   @media screen and (max-width: 300px) {
-    height: 150px;
-    width: 150px;
-    font-size: 4rem;
+    height: 90px;
+    width: 90px;
+    font-size: 2.5rem;
     margin: 0.5rem;
   }
   @media screen and (max-width: 425px) and (max-height: 740px){
@@ -66,15 +66,18 @@ box-shadow: 0px 0px 10px var(--theme-tertiary);
     margin: 0.5rem;
   } 
   @media screen and (max-width: 300px) and (max-height: 655px){
-    height: 120px;
-    width: 120px;
-    font-size: 3.5rem;
+    height: 750px;
+    width: 75px;
+    font-size: 2rem;
     margin: 0.5rem;
   } 
 `
 export const SelectedText = styled.p`
 font-size: 3rem;
 
+@media screen and (max-width: 420px) {
+    font-size: 2.5rem;
+  } 
 @media screen and (max-width: 300px) {
     font-size: 2rem;
   }
