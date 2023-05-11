@@ -53,21 +53,21 @@ box-shadow: 0px 0px 10px var(--theme-tertiary);
     font-size: 6rem;
 }
 @media screen and (max-width: 475px) {
-    height: 140px;
-    width: 140px;
-    font-size: 4rem;
-    margin-right: 2rem;
-}
-@media screen and (max-width: 380px) {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     font-size: 3.5rem;
     margin-right: 2rem;
 }
+@media screen and (max-width: 380px) {
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
 @media screen and (max-width: 300px) {
-    height: 110px;
-    width: 110px;
-    font-size: 3rem;
+    height: 750px;
+    width: 750px;
+    font-size: 2rem;
     margin-right: 1rem;
 }
 `
