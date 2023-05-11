@@ -7,7 +7,7 @@ display: grid;
 grid-template-columns: repeat(3, auto);
 grid-template-rows: 10% auto;
 position: relative;
-overflow: hidden;
+overflow-x: hidden;
 
 @media screen and (max-width: 425px) {
     grid-template-columns: auto;

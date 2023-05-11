@@ -7,5 +7,5 @@
   --theme-tertiary: #1c1c1b;
   --theme-fourth: #8A88E5;
   font-family: 'Bebas Neue', cursive;
-  overflow: hidden;
+  overflow-x: hidden;
 }
