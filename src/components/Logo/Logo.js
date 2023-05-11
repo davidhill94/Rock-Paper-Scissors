@@ -1,9 +1,10 @@
 import React from 'react'
 import { LogoItem } from './LogoStyles'
+import LogoImg from '../../images/rps.png';
 
 const Logo = () => {
   return (
-    <LogoItem>ROCK PAPER SCISSORS</LogoItem>
+    <LogoItem src={LogoImg} alt="Logo"/>
   )
 }
 

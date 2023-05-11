@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LogoItem = styled.p`
-font-size: 3rem;
-text-align: center;
+export const LogoItem = styled.img`
+height: 80px;
+width: auto;
 `
