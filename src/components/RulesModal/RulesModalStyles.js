@@ -8,6 +8,7 @@ bottom: ${(props) => (props.modal ? "0" : "-35vh")};
 background-color: var(--theme-secondary);
 transition: 0.5s ease;
 border-top: 2px solid var(--theme-tertiary);
+opacity: ${(props) => (props.modal ? "1" : "0")};
 `
 export const ModalContent = styled.div`
 width: auto;

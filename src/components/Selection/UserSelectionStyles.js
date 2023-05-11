@@ -13,10 +13,11 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
     width: 100%;
     height: 50.5%; 
     left: ${(props) => (props.selected ? "0vw" : "-100vw")}; 
+    justify-content: start;
 }
 `
 export const H1Text = styled.h1`
