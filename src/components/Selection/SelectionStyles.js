@@ -23,6 +23,7 @@ grid-row: 1 / 2;
 display: flex;
 align-items: center;
 justify-content: center;
+padding-top: 1rem;
 
 @media screen and (max-width: 425px) {
     grid-column: 1 / 2;
@@ -65,13 +66,8 @@ box-shadow: 0px 0px 10px var(--theme-tertiary);
 @media screen and (max-width: 300px) {
     height: 110px;
     width: 110px;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-right: 1rem;
-}
-@media screen and (max-height: 720px) {
-    height: 100px;
-    width: 100px;
-    font-size: 3.5rem;
 }
 `
 

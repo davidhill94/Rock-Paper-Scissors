@@ -19,7 +19,7 @@ width: 50.5%;
 height: 100%;
 position: absolute;
 top: 0;
-right: ${(props) => (props.selected ? "0vw" : "-50%")};
+right: ${(props) => (props.selected ? "0vw" : "-50.5%")};
 transition: 0.5s ease;
 background-color: var(--theme-fourth);
 display: flex;
@@ -97,19 +97,29 @@ box-shadow: 0px 0px 10px var(--theme-tertiary);
   font-size: 5rem;
   margin: 0.5rem;
 }
-@media screen and (max-height: 760px) {
-  height: 150px;
-  width: 150px;
-  font-size: 4rem;
-  margin: 0.5rem;
-}
 @media screen and (max-width: 300px) {
   height: 150px;
   width: 150px;
   font-size: 4rem;
   margin: 0.5rem;
 }
+@media screen and (max-width: 425px) and (max-height: 740px){
+  height: 140px;
+  width: 140px;
+  font-size: 4rem;
+  margin: 0.5rem;
+} 
+@media screen and (max-width: 300px) and (max-height: 655px){
+  height: 120px;
+  width: 120px;
+  font-size: 3.5rem;
+  margin: 0.5rem;
+} 
 `
 export const SelectedText = styled.p`
 font-size: 3rem;
+
+@media screen and (max-width: 300px) {
+  font-size: 2rem;
+} 
 `
