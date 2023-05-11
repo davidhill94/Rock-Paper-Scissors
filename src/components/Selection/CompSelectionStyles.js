@@ -33,6 +33,7 @@ justify-content: center;
   bottom: 0;
   top: 50%;
   right: ${(props) => (props.selected ? "0vw" : "-100%")};
+  justify-content: start;
 }
 `
 export const H1Text = styled.h1`
