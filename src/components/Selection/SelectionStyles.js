@@ -11,7 +11,7 @@ overflow: hidden;
 
 @media screen and (max-width: 425px) {
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-rows: 15% 25% 25% 25% auto;
     padding-left: 2.5rem;
 }
 `
@@ -52,7 +52,7 @@ box-shadow: 0px 0px 10px var(--theme-tertiary);
     width: 180px;
     font-size: 6rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 475px) {
     height: 140px;
     width: 140px;
     font-size: 4rem;

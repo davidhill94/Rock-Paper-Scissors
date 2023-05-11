@@ -26,7 +26,7 @@ font-size: 2rem;
 text-align: center;
 margin: 0 2rem;
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     font-size: 1.25rem;
 }
 @media screen and (max-width: 425px) {
