@@ -7,11 +7,11 @@ display: grid;
 grid-template-columns: repeat(3, auto);
 grid-template-rows: 10% auto;
 position: relative;
-overflow: hidden;
+overflowX: hidden;
 
 @media screen and (max-width: 425px) {
     grid-template-columns: auto;
-    grid-template-rows: 10% 20% 20% 20% auto;
+    grid-template-rows: 15% 20% 20% 20% auto;
     padding-left: 2.5rem;
 }
 `
