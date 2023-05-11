@@ -6,8 +6,8 @@ height: 85vh;
 display: grid;
 grid-template-columns: repeat(3, auto);
 grid-template-rows: 10% auto;
+overflow: hidden;
 position: relative;
-overflow-x: hidden;
 
 @media screen and (max-width: 425px) {
     grid-template-columns: auto;
