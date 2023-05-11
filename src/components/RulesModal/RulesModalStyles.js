@@ -22,9 +22,9 @@ border-bottom: 2px solid var(--theme-tertiary);
 }
 `
 export const Rule = styled.p`
-font-size: 2rem;
+font-size: 1.5rem;
 text-align: center;
-margin: 0 2rem;
+margin: 0 1.5rem;
 
 @media screen and (max-width: 900px) {
     font-size: 1rem;
