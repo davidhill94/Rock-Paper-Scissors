@@ -27,7 +27,7 @@ text-align: center;
 margin: 0 2rem;
 
 @media screen and (max-width: 900px) {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 @media screen and (max-width: 425px) {
     margin: 0.5rem 0;
